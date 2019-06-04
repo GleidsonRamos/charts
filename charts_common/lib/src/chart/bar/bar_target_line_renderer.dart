@@ -226,6 +226,14 @@ class BarTargetLineRenderer<D> extends BaseBarRenderer<D,
           stroke: bar.color,
           roundEndCaps: bar.roundEndCaps,
           strokeWidthPx: bar.strokeWidthPx);
+        
+          try{
+            Rectangle<num> bound = new Rectangle(bar.points[0].x, bar.points[0].y, 0, 0);
+            config.symbolRenderer.paint(canvas,bound);
+          }
+          catch(Exception){
+            print(Exception);
+          }
     });
   }
 
