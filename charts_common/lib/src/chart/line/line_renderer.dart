@@ -80,7 +80,7 @@ class LineRenderer<D> extends BaseCartesianRenderer<D> {
             layoutPaintOrder: config.layoutPaintOrder,
             symbolRenderer: config.symbolRenderer) {
     _pointRenderer = new PointRenderer<D>(
-        config: new PointRendererConfig<D>(radiusPx: this.config.radiusPx));
+        config: new PointRendererConfig<D>(radiusPx: this.config.radiusPx, symbolRenderer: config.symbolRenderer));
   }
 
   @override
