@@ -73,7 +73,7 @@ class BaseChartState<D> extends State<BaseChart<D>>
 
   @override
   void markChartDirty() {
-    _configurationChanged = true;
+    //_configurationChanged = true;
   }
 
   @override
